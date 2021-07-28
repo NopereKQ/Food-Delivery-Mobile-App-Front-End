@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .header {
+    width: 100%;
+    height: 240px;
+    box-shadow: 0px 0px 5px 6px #a1bbc617;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__top {
+    display: flex;
+}
+
+.header span.material-icons-round {
+    color: #572D86;
+    margin-top: 2.5px;
+}
+
+.address {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #9691AE;
+    margin-left: 21px;
+    margin-top: 2.5px;
+}
+
+.address .delivery-address {
+    font-weight: 700;
+    color: #341557;
+}
+
+.header__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #572D86;
+    margin-left: auto;
+}
+
+.header .header__search {
+    width: 330px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0px 0px 10px 0px #0000001f;
+    padding-left: 10px;
+    margin-top: 32px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #CCCDDF;
+}
+
+.header__search::placeholder {
+    color: #CCCDDF;
+}
+
+.header__category {
+    width: auto;
+}
+
+.header__category-title {
+    font-family: 'Poppins', sans-serif  ;
+    font-size: 15px;
+    font-weight: 500;
+    color: #0D1863;
+    margin-top: 17px;
+}
+
+.header__category .header__category-list {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.header__category-box {
+    position: relative;
+    height: 77px;
+    width: 62px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.current {
+    background: #572D86;
+    box-shadow: 0px 0px 10px 0px rgba(100, 123, 154, 0.5);
+}
+
+.header__category-img {
+    width: 33px;
+    z-index: 5;
+
+}
+
+.header__category-blur {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background: #38185C;
+    filter: blur(15px);
+    z-index: 1;
+}
+
+.header__category-box:not(:first-child) {
+    color: rgba(13, 24, 99, 50);
+    padding-left: 15px;
+}
