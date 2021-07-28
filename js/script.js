@@ -27,7 +27,12 @@ addtocart.forEach((element) => {
         // totalPrice += products[productId].price;
         // totalPrice += 10;
         // console.log(totalPrice);
-        cart.push(products[productId])
+        handleAddToCart(cart, products[productId])
+        // cart.push(products[productId])
         console.log(cart)
     })
 })
+
+function handleAddToCart(type, array) {
+    type.push(array)
+}
